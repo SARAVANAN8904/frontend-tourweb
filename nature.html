@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Roboto", serif;
+                color: #fff;
+            }
+            body{
+                width: 100%; height: 100%;
+                position: relative;
+            }
+            video{
+                z-index: -10;
+                position: absolute;
+                width: 100%; height: 100vh;
+                object-fit: cover;
+                object-position: center;
+            }
+            .nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgba(225, 225, 225, 0.4);
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .nav .card1 .heading{
+                font-size: 2rem;
+                color: rgba(3, 248, 3, 0.646);
+            }
+            .nav .card2{
+                display: flex;
+                gap: 3.5rem;
+            }
+            .nav .card2 .nav-item{
+                text-decoration: none;
+                font-size: 1.3em;
+                text-transform: uppercase;
+                font-weight: 700;
+                /* color: #000; */
+                color: #091057;
+                border-radius: 4px;
+                padding: 4px;
+            }
+            .nav .card2 .nav-item:hover{
+                background-color: #ffffffda;
+                color: #000;
+            }
+            .main {
+                position: absolute;
+                top: 27vh;
+                left: 12%;
+            }
+            .main .contant .heading{
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+            .main .contant .para{
+                margin-top: 4%;
+                font-size: 25px;
+                word-spacing: 5px;
+            }
+            .main .contant .btn{
+                font-size: 1.8em;
+                padding: 10px;
+                border: none;
+                background-color:rgba(25, 248, 4, 0.769);
+                text-transform: uppercase;
+                margin-top: 3%;
+                border-radius: 4px;
+                cursor: pointer;
+                
+            }
+            .btn-next{
+                position: absolute;
+                left: 5%;
+                top: 50vh;
+                padding: 5px;
+                background-color: #b1b9b255;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transform: rotate(180deg);
+            }
+        </style>
+</head>
+<body>
+    <video src="video/forest.mp4" loop muted autoplay></video>
+    <br>
+    <nav class="nav">
+        <div class="card1">
+            <h1 class="heading">Travel</h1>
+        </div>
+        <div class="card2">
+            <a href="main.html" class="nav-item">home</a>
+            <a href="#" class="nav-item">about</a>
+            <a href="#" class="nav-item">explore</a>
+            <a href="#" class="nav-item">Gallery</a>
+            <a href="#" class="nav-item">contact</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class=" contant">
+            <h1 class="heading">Discover the Beauty <br>of Nature</h1>
+            <p class="para">Embark on a nature tour and experience the breathtaking beauty <br>of forests, mountains, and rivers. Enjoy peaceful surroundings,<br> diverse wildlife, and reconnect with the wonders of the natural world.</p>
+            <button class="btn">Read more</button>
+        </div>
+    </main>
+    <a href="sky.html"><button class="btn-next"><img src="image/right-chevron-.png" height="40px" width="40px"></button></a>
+</body>
+</html>
